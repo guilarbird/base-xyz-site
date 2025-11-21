@@ -446,3 +446,27 @@
 - [x] Adicionar background gradient (roxo → azul escuro) na página /cadastro
 - [x] Manter consistência visual com seção de newsletter
 - [x] Aplicar mesmo estilo: gradient radial com glow roxo
+
+## Deploy para Produção (base-xyz.com)
+
+- [ ] Criar repositório GitHub
+  - [ ] Inicializar git no projeto
+  - [ ] Criar .gitignore adequado
+  - [ ] Fazer commit inicial
+  - [ ] Criar repositório remoto no GitHub
+  - [ ] Push do código
+
+- [ ] Configurar Vercel
+  - [ ] Importar projeto do GitHub
+  - [ ] Configurar variáveis de ambiente
+  - [ ] Fazer deploy inicial
+
+- [ ] Conectar domínio
+  - [ ] Adicionar base-xyz.com no Vercel
+  - [ ] Configurar DNS (A/AAAA records)
+  - [ ] Validar SSL/HTTPS
+
+- [ ] Validar integrações
+  - [ ] Testar cadastro → Circle.so
+  - [ ] Testar newsletter
+  - [ ] Verificar todas as rotas
