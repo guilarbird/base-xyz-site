@@ -284,3 +284,54 @@
 - [ ] Criar repositório GitHub (base-xyz-site)
 - [ ] Conectar com Vercel para deploy automático
 - [ ] Configurar edição via GitHub
+
+## Observações de UX (Revisão Mobile)
+
+### Navegação e Fluxo
+- [x] Problema: "Aceitar o Desafio" leva para /desafio que tem outro "Aceitar o Desafio" → /cadastro (navegação redundante)
+- [x] Solução: Mantida estrutura de páginas separadas, mas CTAs principais vão direto para /cadastro
+
+### Página FAQ (/faq)
+- [x] Adicionar hero visual/imagem no topo
+- [x] Adicionar introdução contextual antes do accordion
+- [x] Expandir FAQ com mais perguntas relevantes (20+ perguntas)
+- [x] Dividir FAQ por categorias/tópicos:
+  - [x] Sobre a Base XYZ (4 perguntas)
+  - [x] Desafio da Garrafa (4 perguntas)
+  - [x] Trilhas e Conteúdo (4 perguntas)
+  - [x] Comunidade e Benefícios (4 perguntas)
+  - [x] Técnico/Processo (3 perguntas)
+
+### Páginas Secundárias (Geral)
+- [x] Adicionar elementos visuais/imagens em todas as páginas (/desafio, /jornada, /academia, /faq)
+- [x] Heroes com gradientes e imagens de fundo em todas as páginas
+- [ ] Melhorar narrativa e conexão entre páginas (amarrar história do onboarding)
+
+### Página Cadastro (/cadastro)
+- [x] Adicionar imagem/branding visual no topo
+- [x] **CRÍTICO:** Integrar formulário com Circle.so API
+  - [x] Obter API key do Circle.so
+  - [x] Implementar endpoint de criação de membro
+  - [x] Mapear campos: nome, email, trilhas, redes sociais, motivação
+  - [x] Tratar erros e validações da API
+  - [x] Usar API real (localStorage apenas para onboarding)
+
+### Campo "O que você quer construir ou aprender?" (Cadastro)
+- [x] Trocar campo aberto por **seleção múltipla** com checkboxes
+- [x] Opções sugeridas:
+  - [x] Aprender sobre stablecoins
+  - [x] Criar conteúdo sobre economia digital
+  - [x] Construir produtos Web3
+  - [x] Monetizar como creator
+  - [x] Entender DeFi
+  - [x] Trabalhar com gig economy
+  - [x] Outro (especifique)
+- [x] Se selecionar "Outro", mostrar campo de texto condicional
+- [x] Melhorar contraste do placeholder (mais escuro mas legível)
+- [x] Adicionar helper text contextual
+
+### Circle.so API Integration
+- [x] Credentials recebidas
+- [x] Configurar API token como secret (admin_v1)
+- [x] Implementar criação de membro via API
+- [x] Testar integração (validado com sucesso)

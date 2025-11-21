@@ -18,9 +18,23 @@ export default function Academia() {
         </div>
       </header>
 
-      <main className="flex-1 py-20">
-        <div className="container max-w-5xl">
-          <div className="text-center mb-16">
+      {/* Hero com imagem */}
+      <div 
+        className="relative py-20 overflow-hidden"
+        style={{
+          background: 'linear-gradient(180deg, #0A0A0B 0%, #1A0A2E 100%)'
+        }}
+      >
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: 'url(/images/hero-abstract-2.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <div className="container max-w-5xl relative z-10">
+          <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#E6E6E6' }}>
               Academia EdTech
             </h1>
@@ -28,6 +42,11 @@ export default function Academia() {
               Cursos, cases e análises sobre stablecoins, DeFi, pagamentos cross-border e inovação digital
             </p>
           </div>
+        </div>
+      </div>
+
+      <main className="flex-1 py-20">
+        <div className="container max-w-5xl">
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {[

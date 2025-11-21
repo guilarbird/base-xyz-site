@@ -19,10 +19,23 @@ export default function Desafio() {
         </div>
       </header>
 
-      <main className="flex-1 py-20">
-        <div className="container max-w-5xl">
-          {/* Hero */}
-          <div className="text-center mb-16">
+      {/* Hero com imagem */}
+      <div 
+        className="relative py-20 overflow-hidden"
+        style={{
+          background: 'linear-gradient(180deg, #0A0A0B 0%, #1A0A2E 100%)'
+        }}
+      >
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: 'url(/images/hero-economy.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        />
+        <div className="container max-w-5xl relative z-10">
+          <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#E6E6E6' }}>
               Desafio da Garrafa
             </h1>
@@ -30,6 +43,11 @@ export default function Desafio() {
               Seu ritual de entrada criativo para a Base XYZ
             </p>
           </div>
+        </div>
+      </div>
+
+      <main className="flex-1 py-20">
+        <div className="container max-w-5xl">
 
           {/* O que é */}
           <Card className="bg-card border-border/50 mb-12">
