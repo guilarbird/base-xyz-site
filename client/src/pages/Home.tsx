@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { APP_LOGO, APP_TITLE } from "@/const";
 import { ArrowRight, Wine, GraduationCap, Palette, Wrench, Users, CheckCircle2 } from "lucide-react";
+import SignupForm from "@/components/SignupForm";
 
 export default function Home() {
   return (
@@ -47,15 +48,12 @@ export default function Home() {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Não aceitamos qualquer um. Aceite o <strong className="text-foreground">Desafio da Garrafa</strong> e prove que você pertence aqui.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <Button size="lg" className="text-lg px-8" asChild>
-                  <a href="#desafio">
-                    Aceitar o Desafio da Garrafa
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                  <a href="#sobre">Explorar a Comunidade</a>
+              <div className="flex flex-col items-center gap-6 pt-8">
+                <div className="max-w-md w-full">
+                  <SignupForm />
+                </div>
+                <Button size="lg" variant="ghost" className="text-lg" asChild>
+                  <a href="#sobre">Ou explore a comunidade primeiro</a>
                 </Button>
               </div>
             </div>
@@ -280,16 +278,8 @@ export default function Home() {
               <p className="text-xl text-muted-foreground">
                 Junte-se à elite da economia digital. Comece agora.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button size="lg" className="text-lg px-8" asChild>
-                  <a href="https://www.base-xyz.com" target="_blank" rel="noopener noreferrer">
-                    Aceitar o Desafio
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                  <a href="mailto:contato@base-xyz.com">Falar com a Equipe</a>
-                </Button>
+              <div className="max-w-md mx-auto w-full">
+                <SignupForm />
               </div>
             </div>
           </div>

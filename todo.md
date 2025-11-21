@@ -19,3 +19,10 @@
 - [ ] Redirecionamento base-xyz.com → www.base-xyz.com
 - [ ] Deploy no Vercel
 - [ ] Configurar domínios no Vercel
+
+## Novas Funcionalidades
+
+- [x] Formulário de cadastro/interesse
+- [x] Validação de email
+- [x] Feedback visual após submissão
+- [ ] Integração com sistema de convites (Circle API ou email)
