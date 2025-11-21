@@ -222,34 +222,78 @@ export default function Home() {
         </section>
 
         {/* Jornada Section */}
-        <section id="jornada" className="py-20 bg-card/30">
-          <div className="container">
-            <div className="max-w-3xl mx-auto space-y-12">
-              <div className="text-center space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">
+        <section 
+          id="jornada" 
+          className="py-20 relative border-t border-b border-[#1A1A1A]"
+          style={{
+            background: 'linear-gradient(180deg, #0C0C0C 0%, #0A0A0A 100%)'
+          }}
+        >
+          {/* Glow cinematográfico atrás do título */}
+          <div 
+            className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 pointer-events-none"
+            style={{
+              background: 'radial-gradient(circle at center, rgba(140, 82, 255, 0.10) 0%, rgba(0,0,0,0) 70%)'
+            }}
+          />
+          
+          <div className="container relative z-10">
+            <div className="max-w-3xl mx-auto">
+              {/* Título */}
+              <div className="text-center mb-6">
+                <h2 
+                  className="text-3xl md:text-4xl font-bold"
+                  style={{ color: '#E6E6E6' }}
+                >
                   Sua Jornada na Economia Digital
                 </h2>
-                <p className="text-xl text-muted-foreground">
-                  Do Desafio da Garrafa às Operações de Elite
+              </div>
+              
+              {/* Subtítulo */}
+              <div className="text-center mb-8">
+                <p 
+                  className="text-xl"
+                  style={{ color: '#9E9E9E' }}
+                >
+                  Do primeiro desafio à conquista do nível Elite
                 </p>
               </div>
 
-              <div className="max-w-2xl mx-auto space-y-6 text-center">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Comece aceitando o <strong className="text-foreground">Desafio da Garrafa</strong> e torne-se Recruta. 
-                  Escolha sua trilha (Creator ou Builder), aprenda sobre <strong className="text-foreground">stablecoins</strong>, <strong className="text-foreground">gig economy</strong> e <strong className="text-foreground">economia criativa</strong>. 
-                  Complete missões para ganhar patentes e acesso a conteúdo exclusivo. 
-                  Evolua até se tornar Elite e ter acesso a Operações de Elite, network premium e oportunidades na economia digital.
+              {/* Texto principal (dois blocos) */}
+              <div className="max-w-2xl mx-auto space-y-4 text-center mb-10">
+                <p 
+                  className="text-lg leading-relaxed"
+                  style={{ color: '#C7C7C7' }}
+                >
+                  Comece aceitando o <strong style={{ color: '#E6E6E6' }}>Desafio da Garrafa</strong> e torne-se Recruta. Escolha sua trilha — Creator ou Builder — e aprofunde-se em <strong style={{ color: '#E6E6E6' }}>stablecoins</strong>, <strong style={{ color: '#E6E6E6' }}>economia sob demanda</strong> e <strong style={{ color: '#E6E6E6' }}>criatividade digital</strong>.
+                </p>
+                <p 
+                  className="text-lg leading-relaxed"
+                  style={{ color: '#C7C7C7' }}
+                >
+                  Complete missões, conquiste patentes e evolua até se tornar <strong style={{ color: '#E6E6E6' }}>Elite</strong>, com acesso às Operações de Elite, rede premium e novas oportunidades na economia digital.
                 </p>
               </div>
 
-              <div className="text-center pt-8">
-                <Button size="lg" asChild>
-                  <a href="#desafio" className="inline-flex items-center">
-                    Começar Agora
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+              {/* Botão refinado */}
+              <div className="text-center">
+                <a 
+                  href="#desafio" 
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold text-white transition-all hover:scale-105"
+                  style={{
+                    background: 'linear-gradient(90deg, #6F3BFF, #8C52FF)',
+                    boxShadow: '0 0 12px rgba(140, 82, 255, 0.35)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = '0 0 18px rgba(140, 82, 255, 0.45)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = '0 0 12px rgba(140, 82, 255, 0.35)';
+                  }}
+                >
+                  Começar Agora
+                  <ArrowRight className="h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>
