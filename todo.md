@@ -40,3 +40,14 @@
 - [x] Aplicar brand guidelines do Coins.xyz
 - [x] Criar prompt de vídeo psicodélico da garrafa com blockchains
 - [x] Remover formulários do Hero e CTA (manter apenas newsletter)
+
+## Melhorias de UX/Design (coins.xyz style)
+
+- [x] Remover cards da seção "Sua Jornada"
+- [x] Centralizar textos nas seções
+- [x] Adicionar accordion/toggle no FAQ
+- [x] Background animado de garrafas no CTA Final (garrafas em marca d'água)
+- [x] Atualizar footer seguindo coins.xyz/pt-br (simplificado e limpo)
+- [x] Atualizar header seguindo coins.xyz/pt-br
+- [x] Logo como texto "BASE XYZ" ao invés de imagem
+- [ ] Estilizar formulário seguindo Circle.so
