@@ -122,10 +122,6 @@ export default function SignupForm() {
               </>
             )}
           </Button>
-
-          <p className="text-xs text-muted-foreground text-center">
-            Ao se cadastrar, você concorda com nossos Termos de Uso e Política de Privacidade.
-          </p>
         </form>
       </CardContent>
     </Card>
