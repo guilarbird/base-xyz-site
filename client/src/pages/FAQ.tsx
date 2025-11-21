@@ -120,8 +120,8 @@ export default function FAQ() {
             <img src={APP_LOGO} alt="BASE XYZ" className="h-6 w-6" />
             <span className="font-bold text-lg tracking-tight">BASE XYZ</span>
           </div>
-          <Button variant="ghost" size="sm" asChild>
-            <a href="/">Voltar</a>
+          <Button variant="ghost" size="sm" onClick={() => window.history.back()}>
+            Voltar
           </Button>
         </div>
       </header>

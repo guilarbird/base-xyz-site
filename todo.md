@@ -402,3 +402,9 @@
   - [x] Estilo tech/minimalista
   - [x] Elementos de economia digital
 
+
+## Bug: Botão Voltar
+
+- [x] Problema: Botão "Voltar" estava sempre levando para home em vez de voltar para a página anterior
+- [x] Solução: Trocado `<a href="/">` por `onClick={() => window.history.back()}`
+- [x] Verificado em todas as páginas que têm botão Voltar (/desafio, /jornada, /academia, /faq, /cadastro)
