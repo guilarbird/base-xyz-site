@@ -61,3 +61,9 @@
 - [x] Adicionar vídeo da garrafa preta no Hero
 - [x] Adicionar vídeo da garrafa girando em outras seções
 - [x] Remover imagem estática da garrafa no Hero
+
+## Vídeo Background Hero
+
+- [x] Adicionar vídeo do universo como background da seção Hero
+- [x] Implementar efeito de fusão entre garrafa e fundo espacial (mix-blend-screen)
+- [x] Separar texto à esquerda e garrafa à direita com blend modes

@@ -33,45 +33,59 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section com Vídeo */}
-        <section className="py-20 md:py-32 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
-          <div className="container relative">
+        {/* Hero Section com Vídeo Background */}
+        <section className="py-20 md:py-32 relative overflow-hidden min-h-screen flex items-center">
+          {/* Vídeo Background do Universo */}
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
+          >
+            <source src="/universe-background.mp4" type="video/mp4" />
+          </video>
+          
+          {/* Overlay escuro para melhorar legibilidade */}
+          <div className="absolute inset-0 bg-black/40" />
+          
+          <div className="container relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Lado Esquerdo - Texto */}
               <div className="space-y-8">
-                <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">
+                <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary backdrop-blur-sm">
                   Economia Digital • Creators • Stablecoins
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
                   Domine a <span className="text-primary">Economia Digital</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground">
+                <p className="text-xl md:text-2xl text-foreground">
                   A comunidade de elite para creators, builders e investidores da nova economia
                 </p>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-foreground/90">
                   Aprenda sobre <strong className="text-foreground">stablecoins</strong>, <strong className="text-foreground">gig economy</strong>, <strong className="text-foreground">economia criativa</strong> e <strong className="text-foreground">edtech</strong>. Aceite o Desafio da Garrafa e prove que você pertence aqui.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" asChild>
                     <a href="#desafio">Aceitar o Desafio</a>
                   </Button>
-                  <Button size="lg" variant="ghost" asChild>
+                  <Button size="lg" variant="ghost" className="backdrop-blur-sm" asChild>
                     <a href="#sobre">Explorar a Comunidade</a>
                   </Button>
                 </div>
               </div>
 
-              {/* Lado Direito - Vídeo da Garrafa */}
+              {/* Lado Direito - Vídeo da Garrafa com Fusão */}
               <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-md">
-                  <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
+                  {/* Efeito de fusão/blend com o background */}
                   <video 
                     autoPlay 
                     loop 
                     muted 
                     playsInline
-                    className="relative z-10 w-full h-auto drop-shadow-2xl"
+                    className="relative z-10 w-full h-auto mix-blend-screen opacity-90"
+                    style={{ filter: 'brightness(1.1) contrast(1.1)' }}
                   >
                     <source src="/bottle-video-1.mp4" type="video/mp4" />
                   </video>
