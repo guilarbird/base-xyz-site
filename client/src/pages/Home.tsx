@@ -4,12 +4,16 @@ import { APP_LOGO, APP_TITLE } from "@/const";
 import { ArrowRight, Lightbulb, Video, Award, BookOpen, Palette, Wrench } from "lucide-react";
 import NewsletterForm from "@/components/NewsletterForm";
 import FAQAccordion from "@/components/FAQAccordion";
+import FunCTAPopup from "@/components/FunCTAPopup";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   // Intersection Observer para animações de scroll
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
   const observerRef = useRef<IntersectionObserver | null>(null);
+  
+  // Popup interativo engraçado
+  const [showFunPopup, setShowFunPopup] = useState(false);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -138,8 +142,8 @@ export default function Home() {
                     Aprenda sobre <strong style={{ color: '#E6E6E6' }}>stablecoins</strong>, <strong style={{ color: '#E6E6E6' }}>gig economy</strong>, <strong style={{ color: '#E6E6E6' }}>economia criativa</strong> e <strong style={{ color: '#E6E6E6' }}>edtech</strong>. Aceite o Desafio da Garrafa e prove que você pertence aqui.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center" style={{ marginTop: '40px' }}>
-                    <a 
-                      href="/cadastro" 
+                    <button 
+                      onClick={() => setShowFunPopup(true)}
                       className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-semibold text-white transition-all hover:scale-105"
                       style={{
                         background: 'linear-gradient(90deg, #6F3BFF, #8C52FF)',
@@ -154,7 +158,7 @@ export default function Home() {
                     >
                       Participar Agora
                       <ArrowRight className="h-5 w-5" />
-                    </a>
+                    </button>
                     <Button size="lg" variant="ghost" className="backdrop-blur-sm border border-white/20 hover:border-primary/50" asChild>
                       <a href="/jornada">Explorar Trilhas</a>
                     </Button>
@@ -278,8 +282,8 @@ export default function Home() {
               </div>
 
               <div className="text-center" style={{ marginTop: '48px' }}>
-                <a 
-                  href="#desafio" 
+                <button 
+                  onClick={() => setShowFunPopup(true)}
                   className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold text-white transition-all hover:scale-105"
                   style={{
                     background: 'linear-gradient(90deg, #6F3BFF, #8C52FF)',
@@ -294,7 +298,7 @@ export default function Home() {
                 >
                   Aceitar o Desafio
                   <ArrowRight className="h-5 w-5" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -501,8 +505,8 @@ export default function Home() {
 
               {/* Botão refinado */}
               <div className="text-center" style={{ marginTop: '48px' }}>
-                <a 
-                  href="#desafio" 
+                <button 
+                  onClick={() => setShowFunPopup(true)}
                   className="inline-flex items-center gap-2 px-8 py-3 rounded-lg font-semibold text-white transition-all hover:scale-105"
                   style={{
                     background: 'linear-gradient(90deg, #6F3BFF, #8C52FF)',
@@ -517,7 +521,7 @@ export default function Home() {
                 >
                   Começar Agora
                   <ArrowRight className="h-5 w-5" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -807,6 +811,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Popup interativo engraçado */}
+      <FunCTAPopup isOpen={showFunPopup} onClose={() => setShowFunPopup(false)} />
     </div>
   );
 }

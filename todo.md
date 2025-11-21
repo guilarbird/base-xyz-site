@@ -421,3 +421,12 @@
 - [x] Texto explicativo sobre conteúdo exclusivo
 - [x] Box com glow roxo e background escuro
 - [x] Espaçamento generoso (120px top/bottom)
+
+## Bug: Botões "Começar Agora" e "Aceitar o Desafio"
+
+- [x] Problema: Botões ainda levam para cima aleatoriamente
+- [x] Solução 2 implementada: Popup interativo engraçado com mensagens diferentes a cada clique
+- [x] Identificar quais botões estão com problema (3 botões: Participar Agora, Aceitar o Desafio, Começar Agora)
+- [x] Implementar popup com 4 mensagens engraçadas progressivas
+- [x] Componente FunCTAPopup criado com borda neon e animações
+- [x] Mensagens: "Calma lá, campeão!", "Ansioso(a)?", "Sério mesmo?", "Última chance de desistir..."
