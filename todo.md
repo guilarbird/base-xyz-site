@@ -67,3 +67,10 @@
 - [x] Adicionar vídeo do universo como background da seção Hero
 - [x] Implementar efeito de fusão entre garrafa e fundo espacial (mix-blend-screen)
 - [x] Separar texto à esquerda e garrafa à direita com blend modes
+
+## Legibilidade do Hero
+
+- [x] Aumentar contraste do overlay escuro (bg-black/50)
+- [x] Adicionar backdrop blur no container de texto (backdrop-blur-md)
+- [x] Criar caixa semi-transparente para destacar mensagem (bg-black/30 com borda)
+- [x] Manter animação do universo visível
