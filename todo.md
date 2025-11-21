@@ -51,3 +51,13 @@
 - [x] Atualizar header seguindo coins.xyz/pt-br
 - [x] Logo como texto "BASE XYZ" ao invés de imagem
 - [ ] Estilizar formulário seguindo Circle.so
+
+## SEO e Conteúdo (Economia Digital)
+
+- [x] Reescrever Hero com foco em economia digital
+- [x] Adicionar seção sobre economia criativa e gig economy
+- [x] Incluir keywords: stablecoins, edtech, creators, gig economy
+- [ ] Otimizar meta tags para SEO (title, description, keywords)
+- [x] Adicionar vídeo da garrafa preta no Hero
+- [x] Adicionar vídeo da garrafa girando em outras seções
+- [x] Remover imagem estática da garrafa no Hero

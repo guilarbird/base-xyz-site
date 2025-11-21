@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { APP_LOGO, APP_TITLE } from "@/const";
-import { ArrowRight, Wine, GraduationCap, Palette, Wrench, CheckCircle2, Sparkles, Target, Users } from "lucide-react";
+import { ArrowRight, GraduationCap, Palette, Wrench, Coins, BookOpen, Users2 } from "lucide-react";
 import NewsletterForm from "@/components/NewsletterForm";
 import FAQAccordion from "@/components/FAQAccordion";
 
@@ -33,7 +33,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section com Garrafa */}
+        {/* Hero Section com Vídeo */}
         <section className="py-20 md:py-32 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
           <div className="container relative">
@@ -41,32 +41,40 @@ export default function Home() {
               {/* Lado Esquerdo - Texto */}
               <div className="space-y-8">
                 <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">
-                  Comunidade de Elite
+                  Economia Digital • Creators • Stablecoins
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-                  Bem-vindo à <span className="text-primary">Base XYZ</span>
+                  Domine a <span className="text-primary">Economia Digital</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground">
-                  A comunidade de elite para criadores e construtores da economia digital
+                  A comunidade de elite para creators, builders e investidores da nova economia
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Não aceitamos qualquer um. Aceite o <strong className="text-foreground">Desafio da Garrafa</strong> e prove que você pertence aqui.
+                  Aprenda sobre <strong className="text-foreground">stablecoins</strong>, <strong className="text-foreground">gig economy</strong>, <strong className="text-foreground">economia criativa</strong> e <strong className="text-foreground">edtech</strong>. Aceite o Desafio da Garrafa e prove que você pertence aqui.
                 </p>
-
-                <Button size="lg" variant="ghost" className="text-lg" asChild>
-                  <a href="#sobre">Ou explore a comunidade primeiro</a>
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button size="lg" asChild>
+                    <a href="#desafio">Aceitar o Desafio</a>
+                  </Button>
+                  <Button size="lg" variant="ghost" asChild>
+                    <a href="#sobre">Explorar a Comunidade</a>
+                  </Button>
+                </div>
               </div>
 
-              {/* Lado Direito - Garrafa */}
+              {/* Lado Direito - Vídeo da Garrafa */}
               <div className="relative flex items-center justify-center lg:justify-end">
                 <div className="relative w-full max-w-md">
                   <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-                  <img 
-                    src="/bottle-black.png" 
-                    alt="Garrafa Base XYZ" 
+                  <video 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
                     className="relative z-10 w-full h-auto drop-shadow-2xl"
-                  />
+                  >
+                    <source src="/bottle-video-1.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
@@ -75,9 +83,6 @@ export default function Home() {
 
         {/* Desafio da Garrafa Section */}
         <section id="desafio" className="py-20 bg-card/30 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
-            <img src="/bottle-white.png" alt="" className="h-full object-contain" />
-          </div>
           <div className="container relative">
             <div className="max-w-4xl mx-auto space-y-12">
               <div className="text-center space-y-4">
@@ -85,10 +90,10 @@ export default function Home() {
                   O Desafio da Garrafa
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Seu Ritual de Entrada
+                  Seu Ritual de Entrada na Economia Digital
                 </p>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Não aceitamos qualquer um. Mostre sua <strong className="text-foreground">criatividade</strong>, <strong className="text-foreground">pensamento crítico</strong> e <strong className="text-foreground">capacidade de execução</strong>.
+                  Não aceitamos qualquer um. Mostre sua <strong className="text-foreground">criatividade</strong>, <strong className="text-foreground">pensamento crítico</strong> e <strong className="text-foreground">domínio da economia digital</strong>.
                 </p>
               </div>
 
@@ -100,7 +105,7 @@ export default function Home() {
                     </div>
                     <h3 className="font-semibold text-lg">Receba um Tema</h3>
                     <p className="text-sm text-muted-foreground">
-                      Toda semana, um novo tema sobre economia digital (stablecoins, DeFi, pagamentos cross-border)
+                      Toda semana, um novo tema sobre economia digital: stablecoins, DeFi, gig economy, creators, edtech
                     </p>
                   </CardContent>
                 </Card>
@@ -142,27 +147,27 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sobre Section com Garrafas */}
+        {/* Sobre Section - Economia Digital */}
         <section id="sobre" className="py-20 relative">
           <div className="container">
             <div className="max-w-5xl mx-auto">
               <div className="text-center space-y-4 mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  Uma Comunidade de Elite para a Economia Digital
+                  A Comunidade da Economia Digital
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Conectando criadores, construtores e investidores que estão moldando o futuro
+                  Conectando creators, builders e investidores que estão moldando o futuro da economia criativa e gig economy
                 </p>
               </div>
 
               <div className="grid md:grid-cols-3 gap-8 mb-12">
                 <div className="text-center space-y-4">
                   <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                    <GraduationCap className="h-8 w-8 text-primary" />
+                    <BookOpen className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-xl">Academia</h3>
+                  <h3 className="font-semibold text-xl">Academia EdTech</h3>
                   <p className="text-muted-foreground">
-                    Cursos, cases e análises de mercado sobre cripto e economia digital
+                    Cursos, cases e análises sobre stablecoins, DeFi, pagamentos cross-border e economia digital
                   </p>
                 </div>
 
@@ -172,7 +177,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-semibold text-xl">Trilha Creator</h3>
                   <p className="text-muted-foreground">
-                    Melhore seus métodos de criação de conteúdo e monetização
+                    Domine a economia criativa: criação de conteúdo, monetização e gig economy para creators
                   </p>
                 </div>
 
@@ -182,16 +187,22 @@ export default function Home() {
                   </div>
                   <h3 className="font-semibold text-xl">Trilha Builder</h3>
                   <p className="text-muted-foreground">
-                    Melhore suas oportunidades e construa produtos inovadores
+                    Construa produtos inovadores na economia digital: stablecoins, DeFi e infraestrutura Web3
                   </p>
                 </div>
               </div>
 
-              {/* Garrafas */}
-              <div className="flex justify-center gap-8 opacity-30">
-                <img src="/bottle-green.png" alt="" className="h-32 object-contain" />
-                <img src="/bottle-blue.png" alt="" className="h-32 object-contain" />
-                <img src="/bottle-red.png" alt="" className="h-32 object-contain" />
+              {/* Vídeo da Garrafa Girando */}
+              <div className="flex justify-center">
+                <video 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="h-48 object-contain opacity-60"
+                >
+                  <source src="/bottle-video-2.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
@@ -203,18 +214,19 @@ export default function Home() {
             <div className="max-w-3xl mx-auto space-y-12">
               <div className="text-center space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  Sua Jornada na Base XYZ
+                  Sua Jornada na Economia Digital
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Um caminho claro de progressão e reconhecimento
+                  Do Desafio da Garrafa às Operações de Elite
                 </p>
               </div>
 
               <div className="max-w-2xl mx-auto space-y-6 text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Comece aceitando o <strong className="text-foreground">Desafio da Garrafa</strong> e torne-se Recruta. 
-                  Escolha sua trilha (Creator ou Builder), complete missões para ganhar patentes e acesso a conteúdo exclusivo. 
-                  Evolua até se tornar Elite e ter acesso a Operações de Elite e network premium.
+                  Escolha sua trilha (Creator ou Builder), aprenda sobre <strong className="text-foreground">stablecoins</strong>, <strong className="text-foreground">gig economy</strong> e <strong className="text-foreground">economia criativa</strong>. 
+                  Complete missões para ganhar patentes e acesso a conteúdo exclusivo. 
+                  Evolua até se tornar Elite e ter acesso a Operações de Elite, network premium e oportunidades na economia digital.
                 </p>
               </div>
 
@@ -243,23 +255,23 @@ export default function Home() {
               <FAQAccordion items={[
                 {
                   q: "O que é o Desafio da Garrafa?",
-                  a: "É um ritual de entrada criativo onde você cria um vídeo de até 60 segundos explicando um tema da economia digital. É nossa forma de identificar pessoas com pensamento crítico e capacidade de comunicação."
+                  a: "É um ritual de entrada criativo onde você cria um vídeo de até 60 segundos explicando um tema da economia digital (stablecoins, DeFi, gig economy, etc). É nossa forma de identificar pessoas com pensamento crítico e capacidade de comunicação."
                 },
                 {
                   q: "Quanto custa para participar?",
                   a: "A participação na Base XYZ é gratuita. Nosso foco é em qualidade, não em quantidade. Você só precisa completar o Desafio da Garrafa para entrar."
                 },
                 {
-                  q: "Quanto tempo leva para completar uma missão?",
-                  a: "Cada missão é projetada para ser completada em 1-2 semanas, dependendo do seu ritmo. Você pode avançar no seu próprio tempo, mas recomendamos estar ativo para aproveitar as interações da comunidade."
+                  q: "O que vou aprender sobre economia digital?",
+                  a: "Você terá acesso a conteúdo sobre stablecoins, DeFi, economia criativa, gig economy, edtech, pagamentos cross-border, Web3 e muito mais. Tudo com foco prático e aplicável."
                 },
                 {
                   q: "Posso participar dos dois trilhas (Creator e Builder)?",
-                  a: "Sim! Você pode escolher uma trilha principal, mas terá acesso ao conteúdo de ambas. A diferença está nas missões específicas e no network de cada trilha."
+                  a: "Sim! Você pode escolher uma trilha principal, mas terá acesso ao conteúdo de ambas. A Trilha Creator foca em economia criativa e gig economy, enquanto a Trilha Builder foca em construção de produtos na economia digital."
                 },
                 {
                   q: "O que são Operações de Elite?",
-                  a: "São oportunidades exclusivas, incluindo projetos reais, deals de investimento, parcerias estratégicas e acesso a network premium. Disponível apenas para membros que alcançaram as patentes mais altas."
+                  a: "São oportunidades exclusivas na economia digital: projetos reais com stablecoins, deals de investimento, parcerias estratégicas e acesso a network premium. Disponível apenas para membros que alcançaram as patentes mais altas."
                 }
               ]} />
             </div>
@@ -279,14 +291,14 @@ export default function Home() {
           <div className="container relative">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Pronto para Aceitar o Desafio?
+                Pronto para Dominar a Economia Digital?
               </h2>
               <p className="text-xl text-muted-foreground">
-                Junte-se à elite da economia digital. Comece agora.
+                Junte-se à elite dos creators e builders. Comece agora.
               </p>
-        <div className="max-w-md mx-auto">
-          <NewsletterForm />
-        </div>
+              <div className="max-w-md mx-auto">
+                <NewsletterForm />
+              </div>
             </div>
           </div>
         </section>
@@ -326,7 +338,7 @@ export default function Home() {
             <div className="space-y-4">
               <h4 className="font-semibold">Newsletter</h4>
               <p className="text-sm text-muted-foreground">
-                Receba atualizações exclusivas
+                Receba atualizações sobre economia digital
               </p>
               <NewsletterForm />
             </div>
