@@ -586,56 +586,62 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Final Section */}
+        {/* CTA Final Section - Newsletter Focada no Usuário */}
         <section 
           className="relative overflow-hidden"
           style={{ 
-            paddingTop: '72px',
-            paddingBottom: '72px'
+            paddingTop: '120px',
+            paddingBottom: '120px',
+            background: '#000'
           }}
         >
-          {/* Glow roxo de fundo */}
-          <div 
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] pointer-events-none"
-            style={{
-              background: 'radial-gradient(ellipse at center, rgba(140, 82, 255, 0.12) 0%, rgba(0,0,0,0) 70%)',
-              filter: 'blur(60px)'
-            }}
-          />
-          
           <div className="container relative">
             <div 
-              className="max-w-3xl mx-auto text-center"
+              className="max-w-4xl mx-auto"
               data-animate="cta"
               id="cta"
               style={{
                 opacity: visibleSections.has('cta') ? 1 : 0,
                 transform: visibleSections.has('cta') ? 'translateY(0)' : 'translateY(20px)',
-                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out',
-                background: 'rgba(17, 17, 17, 0.5)',
-                backdropFilter: 'blur(20px)',
-                borderRadius: '24px',
-                padding: '48px 32px',
-                border: '1px solid rgba(140, 82, 255, 0.2)'
+                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
               }}
             >
-              <h2 
-                className="text-3xl md:text-5xl font-bold"
-                style={{ color: '#E6E6E6' }}
+              {/* Box com borda neon */}
+              <div 
+                className="relative p-12 md:p-16 text-center"
+                style={{
+                  background: 'rgba(10, 10, 11, 0.8)',
+                  borderRadius: '16px',
+                  border: '2px solid transparent',
+                  backgroundImage: 'linear-gradient(rgba(10, 10, 11, 0.8), rgba(10, 10, 11, 0.8)), linear-gradient(135deg, #6F3BFF, #00D9FF, #8C52FF)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  boxShadow: '0 0 40px rgba(111, 59, 255, 0.3), inset 0 0 60px rgba(111, 59, 255, 0.05)'
+                }}
               >
-                Pronto para Dominar a Economia Digital?
-              </h2>
-              <p 
-                className="text-xl max-w-2xl mx-auto"
-                style={{ color: '#A1A1A1', marginTop: '24px' }}
-              >
-                Junte-se à elite dos creators e builders. Comece sua jornada agora.
-              </p>
-              <div className="max-w-md mx-auto" style={{ marginTop: '40px' }}>
-                <p className="text-sm mb-3 text-center" style={{ color: '#9E9E9E' }}>
-                  Receba conteúdo exclusivo sobre stablecoins, DeFi e economia digital
+                <h2 
+                  className="text-4xl md:text-6xl font-bold mb-6"
+                  style={{ 
+                    color: '#FFFFFF',
+                    lineHeight: '1.1'
+                  }}
+                >
+                  Pronto para Dominar a<br />Economia Digital?
+                </h2>
+                <p 
+                  className="text-lg md:text-xl max-w-2xl mx-auto mb-10"
+                  style={{ color: '#A1A1A1' }}
+                >
+                  Junte-se à elite dos creators e builders. Comece sua jornada agora.
                 </p>
-                <NewsletterForm />
+                
+                {/* Newsletter form */}
+                <div className="max-w-md mx-auto space-y-4">
+                  <p className="text-sm" style={{ color: '#9E9E9E' }}>
+                    Receba conteúdo exclusivo sobre stablecoins, DeFi e economia digital
+                  </p>
+                  <NewsletterForm />
+                </div>
               </div>
             </div>
           </div>

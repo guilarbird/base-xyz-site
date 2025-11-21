@@ -408,3 +408,16 @@
 - [x] Problema: Botão "Voltar" estava sempre levando para home em vez de voltar para a página anterior
 - [x] Solução: Trocado `<a href="/">` por `onClick={() => window.history.back()}`
 - [x] Verificado em todas as páginas que têm botão Voltar (/desafio, /jornada, /academia, /faq, /cadastro)
+
+## Redesign Newsletter (Focada no Usuário)
+
+- [x] Transformar seção de newsletter em estilo minimalista
+- [x] Criar box com borda neon (roxo/azul gradient #6F3BFF → #00D9FF → #8C52FF)
+- [x] Layout clean e focado no usuário
+- [x] Inspiração: Coins.xyz "Focada no Usuário"
+- [x] Título impactante: "Pronto para Dominar a Economia Digital?"
+- [x] Subtítulo: "Junte-se à elite dos creators e builders. Comece sua jornada agora."
+- [x] Input de email com botão "Inscrever" roxo
+- [x] Texto explicativo sobre conteúdo exclusivo
+- [x] Box com glow roxo e background escuro
+- [x] Espaçamento generoso (120px top/bottom)
