@@ -80,3 +80,8 @@
 - [x] Remover badge "Economia Digital • Creators • Stablecoins" do Hero
 - [x] Centralizar seção "O Desafio da Garrafa" (já estava centralizada)
 - [x] Melhorar copy: substituir "qualquer um" por "comunidade seletiva"
+
+## Melhorias na Seção Desafio
+
+- [x] Centralizar cards 1, 2 e 3 (max-w-3xl mx-auto + text-center)
+- [x] Substituir números por ícones apropriados (Lightbulb, Video, Award)
