@@ -115,3 +115,68 @@
 - [x] Substituir texto pelo conteúdo otimizado (dois blocos)
 - [x] Refinar botão com gradiente roxo (#6F3BFF → #8C52FF) e glow
 - [x] Adicionar bordas sutis de transição (#1A1A1A top e bottom)
+
+## Refinamento Premium Global
+
+### Paleta e Harmonia
+- [x] Aplicar fundo global #0A0A0B (oklch(0.04 0 0))
+- [x] Padronizar tipografia (Títulos #E6E6E6, Subtítulos #A1A1A1, Texto #C7C7C7)
+- [x] Adicionar gradients sutis entre seções
+- [x] Aplicar vignette suave nas laterais
+
+### Espaçamentos Premium
+- [x] 56-72px entre seções (72px implementado)
+- [x] 24px título → subtítulo
+- [x] 32px subtítulo → texto
+- [x] 40px texto → CTAs
+- [x] max-width 620px para textos
+
+### Hero Section
+- [x] Glow roxo suave atrás do título
+- [x] Botão com gradient roxo premium e glow
+- [x] Animações fade-up e elevate
+- [x] Melhorar contraste e hierarquia
+
+### Desafio da Garrafa
+- [x] Transformar passos em cards visuais
+- [x] Título "Seu Ritual de Entrada"
+- [x] Micro animações (fade, scale, linha roxa)
+- [x] Ícones roxos de destaque
+
+### Comunidade de Elite
+- [x] Cards com ícones minimalistas roxos
+- [x] Fundo #111 nos cards
+- [x] Hover: levanta 2px + glow roxo leve
+- [x] Padronizar títulos e textos
+
+### FAQ
+- [x] Accordion funcional (já implementado)
+- [x] Aumentar contraste
+- [x] Bordas inferiores finas
+- [x] Copy mais clara e objetiva
+
+### CTA Final
+- [x] Glow roxo atrás do bloco
+- [x] Texto aspiracional
+- [x] Botão idêntico ao Hero
+- [x] Bordas arredondadas 24px
+
+### Footer
+- [x] 4 colunas (Comunidade, Recursos, Legal, Sobre)
+- [x] Ícones discretos
+- [x] Títulos #9E9E9E, links #C7C7C7
+- [x] Hover roxo nos links
+- [x] Linha superior #1A1A1A
+- [x] © 2025 Base XYZ
+
+### Animações Globais
+- [x] Fade-up ao entrar no viewport (Intersection Observer)
+- [x] Hover scale em botões e cards
+- [x] Glow leve em elementos roxos
+- [x] Tudo sutil e elegante
+
+### Responsividade
+- [x] Textos compactados em mobile
+- [x] Botões touch-friendly
+- [x] Cards em colunas
+- [x] Títulos centralizados

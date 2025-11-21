@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 
 interface FAQItem {
   q: string;
@@ -19,29 +18,40 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
   };
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-0">
       {items.map((item, i) => (
-        <Card 
+        <div 
           key={i} 
-          className="bg-card border-border/50 hover:border-primary/30 transition-all cursor-pointer"
+          className="border-b cursor-pointer transition-all hover:bg-card/30"
+          style={{ borderColor: '#1A1A1A' }}
           onClick={() => toggleItem(i)}
         >
-          <CardContent className="pt-6">
+          <div className="py-6 px-2">
             <div className="flex items-start justify-between gap-4">
-              <h3 className="font-semibold text-lg flex-1">{item.q}</h3>
+              <h3 
+                className="font-semibold text-lg flex-1"
+                style={{ color: '#E6E6E6' }}
+              >
+                {item.q}
+              </h3>
               <ChevronDown 
-                className={`h-5 w-5 text-muted-foreground transition-transform flex-shrink-0 ${
-                  openIndex === i ? 'rotate-180' : ''
-                }`}
+                className={`h-5 w-5 flex-shrink-0 transition-transform`}
+                style={{ 
+                  color: '#8C52FF',
+                  transform: openIndex === i ? 'rotate(180deg)' : 'rotate(0deg)'
+                }}
               />
             </div>
             {openIndex === i && (
-              <p className="text-muted-foreground mt-3 animate-in fade-in slide-in-from-top-2 duration-200">
+              <p 
+                className="mt-4 leading-relaxed animate-in fade-in slide-in-from-top-2 duration-200"
+                style={{ color: '#C7C7C7' }}
+              >
                 {item.a}
               </p>
             )}
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       ))}
     </div>
   );
