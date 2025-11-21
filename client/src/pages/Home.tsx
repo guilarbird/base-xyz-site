@@ -50,8 +50,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40" />
           
           <div className="container relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Lado Esquerdo - Texto */}
+            <div className="max-w-3xl mx-auto text-center">
               <div className="space-y-8">
                 <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary backdrop-blur-sm">
                   Economia Digital • Creators • Stablecoins
@@ -65,7 +64,7 @@ export default function Home() {
                 <p className="text-lg text-foreground/90">
                   Aprenda sobre <strong className="text-foreground">stablecoins</strong>, <strong className="text-foreground">gig economy</strong>, <strong className="text-foreground">economia criativa</strong> e <strong className="text-foreground">edtech</strong>. Aceite o Desafio da Garrafa e prove que você pertence aqui.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" asChild>
                     <a href="#desafio">Aceitar o Desafio</a>
                   </Button>
@@ -75,22 +74,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Lado Direito - Vídeo da Garrafa com Fusão */}
-              <div className="relative flex items-center justify-center lg:justify-end">
-                <div className="relative w-full max-w-md">
-                  {/* Efeito de fusão/blend com o background */}
-                  <video 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline
-                    className="relative z-10 w-full h-auto mix-blend-screen opacity-90"
-                    style={{ filter: 'brightness(1.1) contrast(1.1)' }}
-                  >
-                    <source src="/bottle-video-1.mp4" type="video/mp4" />
-                  </video>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
