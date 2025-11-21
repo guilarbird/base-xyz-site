@@ -143,6 +143,23 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Vídeo da Garrafa com Chamas Section */}
+        <section className="py-20 bg-background relative overflow-hidden">
+          <div className="container">
+            <div className="max-w-2xl mx-auto">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              >
+                <source src="/bottle-flames.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+
         {/* Sobre Section - Economia Digital */}
         <section id="sobre" className="py-20 relative">
           <div className="container">
@@ -186,19 +203,6 @@ export default function Home() {
                     Construa produtos inovadores na economia digital: stablecoins, DeFi e infraestrutura Web3
                   </p>
                 </div>
-              </div>
-
-              {/* Vídeo da Garrafa Girando */}
-              <div className="flex justify-center">
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                  className="h-48 object-contain opacity-60"
-                >
-                  <source src="/bottle-video-2.mp4" type="video/mp4" />
-                </video>
               </div>
             </div>
           </div>

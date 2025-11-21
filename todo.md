@@ -85,3 +85,9 @@
 
 - [x] Centralizar cards 1, 2 e 3 (max-w-3xl mx-auto + text-center)
 - [x] Substituir números por ícones apropriados (Lightbulb, Video, Award)
+
+## Vídeos e Transições
+
+- [x] Adicionar vídeo das chamas no topo após seção Desafio
+- [x] Remover vídeo da garrafa colorida da seção Comunidade
+- [x] Conectar chamas vermelhas do Hero com nova seção (vídeo das chamas adicionado)
