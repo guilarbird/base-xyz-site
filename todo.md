@@ -26,3 +26,10 @@
 - [x] Validação de email
 - [x] Feedback visual após submissão
 - [ ] Integração com sistema de convites (Circle API ou email)
+
+## Branding e Identidade Visual
+
+- [x] Integrar imagens das garrafas na landing page
+- [x] Melhorar tipografia e hierarquia visual
+- [x] Adicionar animações e transições suaves (hover states)
+- [x] Layout com garrafas no Hero, Sobre e CTA
