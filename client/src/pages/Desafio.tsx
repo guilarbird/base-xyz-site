@@ -29,7 +29,7 @@ export default function Desafio() {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: 'url(/images/hero-economy.jpg)',
+            backgroundImage: 'url(/images/hero-desafio.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -123,7 +123,7 @@ export default function Desafio() {
               <h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: '#E6E6E6' }}>
                 Critérios de Avaliação
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {[
                   "Clareza na explicação do tema",
                   "Criatividade na abordagem",

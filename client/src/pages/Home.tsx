@@ -632,6 +632,9 @@ export default function Home() {
                 Junte-se à elite dos creators e builders. Comece sua jornada agora.
               </p>
               <div className="max-w-md mx-auto" style={{ marginTop: '40px' }}>
+                <p className="text-sm mb-3 text-center" style={{ color: '#9E9E9E' }}>
+                  Receba conteúdo exclusivo sobre stablecoins, DeFi e economia digital
+                </p>
                 <NewsletterForm />
               </div>
             </div>

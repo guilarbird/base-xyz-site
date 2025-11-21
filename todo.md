@@ -335,3 +335,70 @@
 - [x] Configurar API token como secret (admin_v1)
 - [x] Implementar criação de membro via API
 - [x] Testar integração (validado com sucesso)
+
+## Fixes Finais (Rodada de Polimento)
+
+### Fix 1: Meta Tags / SEO
+- [x] Trocar `<title>Base XYZ - Landing Page</title>` por `<title>Base XYZ</title>` (usuário precisa alterar em Settings)
+- [x] Simplificar meta description: "São Paulo | EdTech para economia digital"
+- [x] Atualizar og:title e twitter:title
+
+### Fix 2: Página /desafio - Hero Image
+- [x] Substituir imagem Shutterstock por imagem gerada
+- [x] Conceito: Garrafa + tech/nerd + economia digital
+- [x] Imagem gerada e substituída em /images/hero-desafio.jpg
+
+### Fix 3: Página /desafio - Espaçamento Critérios
+- [x] Corrigir espaçamento irregular entre itens da lista "Critérios de Avaliação"
+- [x] Aplicar gap/space-y-6 consistente entre os critérios
+- [x] Garantir alinhamento correto dos ícones de check com o texto
+
+### Fix 4: Diferenciar Newsletter vs Cadastro
+- [x] Adicionar texto explicativo no formulário de newsletter (landing)
+- [x] Texto: "Receba conteúdo exclusivo sobre stablecoins, DeFi e economia digital"
+- [x] Deixar claro que newsletter é apenas para receber conteúdo, não é o cadastro completo
+- [x] Cadastro completo (/cadastro) é para entrar na comunidade
+
+### Fix 5: Circle.so - Conteúdo dos Arquivos de Missão
+- [x] Criar conteúdo completo para "Compartilhe seu Feedback"
+  - [x] Template estruturado de feedback (circle-content-feedback.md)
+  - [x] Categorias (bug, sugestão, elogio, conteúdo, comunidade, feature)
+- [x] Criar "Código de Conduta"
+  - [x] Regras da comunidade (circle-content-codigo-conduta.md)
+  - [x] Comportamento esperado
+  - [x] Consequências de violações
+- [x] Criar "Manifesto da Base XYZ"
+  - [x] Missão da comunidade (circle-content-manifesto.md)
+  - [x] Valores fundamentais
+  - [x] Visão de futuro
+- [x] **Nota:** Arquivos .md criados, usuário precisa copiar para Circle.so
+
+### Fix 6: Rever Jornada Completa + Criar Mini Whitepaper
+- [x] **Contexto:** Programa 5K foi descontinuado, todos voltaram a Creator/Outro Membro
+- [x] Buscar no histórico da conversa:
+  - [x] O que era o Programa 5K original (descontinuado)
+  - [x] Informações sobre RAIDAR (programa de raid para engajamento)
+  - [x] Sistema de patentes/badges mencionado
+  - [x] Estrutura de progressão
+- [x] Criar mini whitepaper definindo:
+  - [x] Porta de entrada (Desafio da Garrafa)
+  - [x] Níveis/patentes da comunidade (Iniciante, Ativo, Contribuidor, Champion)
+  - [x] Critérios de progressão
+  - [x] Benefícios de cada nível
+  - [x] Programas especiais (RAIDAR, Academia, Operações de Elite)
+- [ ] Implementar nova jornada na landing e /jornada
+- [ ] Atualizar FAQ com nova estrutura
+
+### Fix 7: Circle.so - Customização Visual Completa
+- [x] Criar assets visuais para Circle.so:
+  - [x] Banner/cover da comunidade (banner-community.jpg)
+  - [x] Badges/emblemas das patentes (4 badges gerados)
+    - [x] Iniciante (🌱 seedling)
+    - [x] Ativo (⚡ lightning)
+    - [x] Contribuidor (🏆 trophy)
+    - [x] Champion (👑 crown)
+- [x] Manter identidade visual:
+  - [x] Paleta premium (roxo #6F3BFF, preto #0A0A0B)
+  - [x] Estilo tech/minimalista
+  - [x] Elementos de economia digital
+
