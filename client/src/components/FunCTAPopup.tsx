@@ -5,24 +5,19 @@ import { Button } from "@/components/ui/button";
 
 const funMessages = [
   {
-    title: "Calma lá, campeão! 🏃‍♂️",
-    message: "Primeiro respire fundo... A economia digital não vai fugir!",
-    buttonText: "Ok, respirei"
+    title: "🎯 Oferta Exclusiva de Entrada",
+    message: "Você está prestes a se cadastrar no programa Base XYZ. Esta é sua chance única de entrar direto como Champion!",
+    buttonText: "Entendi, continuar"
   },
   {
-    title: "Ansioso(a)? Eu também ficaria! 😅",
-    message: "Mas vamos com calma... Você tem certeza que está pronto(a)?",
-    buttonText: "Tenho sim!"
+    title: "⚡ Desafio da Garrafa = Acesso Champion",
+    message: "Envie seu vídeo de 60 segundos em até 7 dias após o cadastro e entre direto como Champion, pulando todos os níveis iniciais e ganhando acesso imediato às Operações de Elite.",
+    buttonText: "Quero essa vantagem!"
   },
   {
-    title: "Sério mesmo? 🤔",
-    message: "Ok ok, você realmente quer isso. Aguenta mais um clique...",
-    buttonText: "Aguento!"
-  },
-  {
-    title: "Última chance de desistir... 🚪",
-    message: "Não? Então bora! Preparado(a) para dominar a economia digital?",
-    buttonText: "BORA! 🚀",
+    title: "🚀 Pronto para começar?",
+    message: "Recapitulando: Cadastro → 7 dias para enviar vídeo → Entrada direta como Champion. Não perca essa oportunidade exclusiva!",
+    buttonText: "Fazer Cadastro Agora",
     final: true
   }
 ];

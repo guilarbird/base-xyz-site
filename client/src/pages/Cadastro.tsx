@@ -129,7 +129,12 @@ export default function Cadastro() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div 
+      className="min-h-screen flex flex-col text-foreground"
+      style={{
+        background: 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(111, 59, 255, 0.15), transparent 50%), linear-gradient(180deg, #0A0A0B 0%, #0F0F10 100%)'
+      }}
+    >
       <header className="border-b border-border/20 backdrop-blur-md sticky top-0 z-50 bg-black/80">
         <div className="container flex items-center justify-between h-14">
           <div className="flex items-center gap-2">

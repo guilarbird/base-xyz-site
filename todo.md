@@ -430,3 +430,19 @@
 - [x] Implementar popup com 4 mensagens engraçadas progressivas
 - [x] Componente FunCTAPopup criado com borda neon e animações
 - [x] Mensagens: "Calma lá, campeão!", "Ansioso(a)?", "Sério mesmo?", "Última chance de desistir..."
+
+## Reformular Popup para Oferta Especial
+
+- [x] Transformar popup engraçado em popup informativo
+- [x] Explicar oferta especial: cadastro + vídeo em 7 dias = Champion direto
+- [x] 3 telas informativas:
+  - [x] Tela 1: "Oferta Exclusiva de Entrada" (explicar programa + prazo 7 dias)
+  - [x] Tela 2: "Desafio da Garrafa = Acesso Champion" (benefícios de pular níveis)
+  - [x] Tela 3: "Pronto para começar?" (recapitular e CTA)
+- [x] Manter design premium com borda neon
+
+## Background Gradient na Página de Cadastro
+
+- [x] Adicionar background gradient (roxo → azul escuro) na página /cadastro
+- [x] Manter consistência visual com seção de newsletter
+- [x] Aplicar mesmo estilo: gradient radial com glow roxo
