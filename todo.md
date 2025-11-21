@@ -91,3 +91,9 @@
 - [x] Adicionar vídeo das chamas no topo após seção Desafio
 - [x] Remover vídeo da garrafa colorida da seção Comunidade
 - [x] Conectar chamas vermelhas do Hero com nova seção (vídeo das chamas adicionado)
+
+## Vídeo Full-Width
+
+- [x] Substituir vídeo das chamas por garrafa branca/dourada
+- [x] Fazer vídeo ocupar largura total da seção (w-full, sem container)
+- [x] Adicionar transição suave com seção abaixo (gradient fade from-background)

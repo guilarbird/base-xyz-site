@@ -143,21 +143,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Vídeo da Garrafa com Chamas Section */}
-        <section className="py-20 bg-background relative overflow-hidden">
-          <div className="container">
-            <div className="max-w-2xl mx-auto">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              >
-                <source src="/bottle-flames.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
+        {/* Vídeo da Garrafa Full-Width Section */}
+        <section className="relative overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-auto object-cover"
+          >
+            <source src="/bottle-white-gold.mp4" type="video/mp4" />
+          </video>
+          {/* Gradient fade para transição suave */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
         </section>
 
         {/* Sobre Section - Economia Digital */}
