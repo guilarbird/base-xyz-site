@@ -449,24 +449,29 @@
 
 ## Deploy para Produção (base-xyz.com)
 
-- [ ] Criar repositório GitHub
-  - [ ] Inicializar git no projeto
-  - [ ] Criar .gitignore adequado
-  - [ ] Fazer commit inicial
-  - [ ] Criar repositório remoto no GitHub
-  - [ ] Push do código
+- [x] Criar repositório GitHub
+  - [x] Inicializar git no projeto
+  - [x] Criar .gitignore adequado
+  - [x] Fazer commit inicial
+  - [x] Criar repositório remoto no GitHub (https://github.com/guilarbird/base-xyz-site)
+  - [x] Push do código
 
-- [ ] Configurar Vercel
-  - [ ] Importar projeto do GitHub
-  - [ ] Configurar variáveis de ambiente
+- [x] Preparar configuração Vercel
+  - [x] Criar vercel.json com build settings
+  - [x] Criar README.md com instruções
+  - [x] Criar DEPLOY-GUIDE.md completo
+
+- [ ] Configurar Vercel (Ação do usuário)
+  - [ ] Importar projeto do GitHub no Vercel
+  - [ ] Configurar variáveis de ambiente (VITE_CIRCLE_*)
   - [ ] Fazer deploy inicial
 
-- [ ] Conectar domínio
+- [ ] Conectar domínio (Ação do usuário)
   - [ ] Adicionar base-xyz.com no Vercel
-  - [ ] Configurar DNS (A/AAAA records)
+  - [ ] Configurar DNS (A record: 76.76.21.21, CNAME www)
   - [ ] Validar SSL/HTTPS
 
-- [ ] Validar integrações
+- [ ] Validar integrações (Após deploy)
   - [ ] Testar cadastro → Circle.so
   - [ ] Testar newsletter
   - [ ] Verificar todas as rotas
