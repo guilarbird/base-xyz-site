@@ -483,3 +483,10 @@
 - [x] Atualizar vercel.json se necessário (não foi necessário)
 - [x] Fazer commit e push das alterações
 - [x] Criar instruções de configuração DNS para garrafa.base-xyz.com
+
+## Correção de Erro de Build no Vercel
+
+- [x] Corrigir outputDirectory no vercel.json (erro: "No Output Directory named 'dist' found")
+- [x] Ajustar para apontar para dist/public conforme log de build
+- [ ] Fazer commit e push da correção
+- [ ] Validar novo deploy no Vercel
