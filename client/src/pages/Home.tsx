@@ -49,6 +49,9 @@ export default function Home() {
           {/* Overlay escuro para melhorar legibilidade */}
           <div className="absolute inset-0 bg-black/50" />
           
+          {/* Gradiente radial de transição para próxima seção */}
+          <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent via-background/50 to-background" />
+          
           <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               {/* Caixa semi-transparente para destacar conteúdo */}
@@ -78,7 +81,11 @@ export default function Home() {
         </section>
 
         {/* Desafio da Garrafa Section */}
-        <section id="desafio" className="py-20 bg-card/30 relative overflow-hidden">
+        <section id="desafio" className="py-20 relative">
+          {/* Gradiente de transição superior */}
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-transparent" />
+          {/* Gradiente de transição inferior */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
           <div className="container relative">
             <div className="max-w-4xl mx-auto space-y-12">
               <div className="text-center space-y-4">
@@ -154,12 +161,20 @@ export default function Home() {
           >
             <source src="/bottle-white-gold.mp4" type="video/mp4" />
           </video>
-          {/* Gradient fade para transição suave */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+          {/* Overlay sutil para profundidade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/20" />
+          {/* Gradient fade superior para transição suave */}
+          <div className="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-background via-background/60 to-transparent" />
+          {/* Gradient fade inferior para transição suave */}
+          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </section>
 
         {/* Sobre Section - Economia Digital */}
         <section id="sobre" className="py-20 relative">
+          {/* Gradiente radial de fundo para profundidade */}
+          <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent opacity-50" />
+          {/* Gradiente de transição inferior */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
           <div className="container">
             <div className="max-w-5xl mx-auto">
               <div className="text-center space-y-4 mb-16">

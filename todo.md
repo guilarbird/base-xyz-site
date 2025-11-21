@@ -97,3 +97,11 @@
 - [x] Substituir vídeo das chamas por garrafa branca/dourada
 - [x] Fazer vídeo ocupar largura total da seção (w-full, sem container)
 - [x] Adicionar transição suave com seção abaixo (gradient fade from-background)
+
+## Transições Avançadas Entre Seções
+
+- [x] Adicionar gradientes radiais entre Hero e Desafio
+- [x] Melhorar transição do vídeo full-width para Comunidade (gradientes duplos)
+- [x] Adicionar overlays sutis com gradientes (from-background/20)
+- [x] Criar fluxo visual coeso com gradientes verticais
+- [x] Adicionar efeitos de profundidade com gradientes radiais
