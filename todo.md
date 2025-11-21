@@ -33,3 +33,10 @@
 - [x] Melhorar tipografia e hierarquia visual
 - [x] Adicionar animações e transições suaves (hover states)
 - [x] Layout com garrafas no Hero, Sobre e CTA
+
+## Melhorias Solicitadas
+
+- [x] Substituir formulário completo por newsletter simples no footer
+- [x] Aplicar brand guidelines do Coins.xyz
+- [x] Criar prompt de vídeo psicodélico da garrafa com blockchains
+- [x] Remover formulários do Hero e CTA (manter apenas newsletter)

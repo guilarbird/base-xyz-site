@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { APP_LOGO, APP_TITLE } from "@/const";
 import { ArrowRight, Wine, GraduationCap, Palette, Wrench, CheckCircle2, Sparkles, Target, Users } from "lucide-react";
-import SignupForm from "@/components/SignupForm";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -51,9 +51,7 @@ export default function Home() {
                 <p className="text-lg text-muted-foreground">
                   Não aceitamos qualquer um. Aceite o <strong className="text-foreground">Desafio da Garrafa</strong> e prove que você pertence aqui.
                 </p>
-                <div className="max-w-md">
-                  <SignupForm />
-                </div>
+
                 <Button size="lg" variant="ghost" className="text-lg" asChild>
                   <a href="#sobre">Ou explore a comunidade primeiro</a>
                 </Button>
@@ -327,9 +325,9 @@ export default function Home() {
               <p className="text-xl text-muted-foreground">
                 Junte-se à elite da economia digital. Comece agora.
               </p>
-              <div className="max-w-md mx-auto">
-                <SignupForm />
-              </div>
+        <div className="max-w-md mx-auto">
+          <NewsletterForm />
+        </div>
             </div>
           </div>
         </section>
@@ -367,11 +365,11 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">Legal</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition-colors">Termos de Uso</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Privacidade</a></li>
-              </ul>
+              <h4 className="font-semibold">Newsletter</h4>
+              <p className="text-sm text-muted-foreground">
+                Receba atualizações exclusivas
+              </p>
+              <NewsletterForm />
             </div>
           </div>
 
