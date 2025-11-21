@@ -19,13 +19,12 @@ Este projeto está configurado para deploy automático no Vercel.
 
 ### Domínio
 
-Após o deploy, configure o domínio `base-xyz.com`:
+Após o deploy, configure o subdomínio `garrafa.base-xyz.com`:
 
 1. No Vercel, vá em Settings → Domains
-2. Adicione `base-xyz.com` e `www.base-xyz.com`
-3. Configure os DNS records no seu provedor:
-   - `A` record: `76.76.21.21`
-   - `CNAME` www: `cname.vercel-dns.com`
+2. Adicione `garrafa.base-xyz.com`
+3. Configure o DNS record no seu provedor:
+   - `CNAME` garrafa: `cname.vercel-dns.com`
 
 ## 🛠️ Desenvolvimento Local
 
@@ -49,7 +48,7 @@ cd client && pnpm build
 
 ## 🔗 Links
 
-- **Site**: https://base-xyz.com
+- **Landing Page**: https://garrafa.base-xyz.com
 - **Comunidade**: https://www.base-xyz.com (Circle.so)
 - **GitHub**: https://github.com/guilarbird/base-xyz-site
 

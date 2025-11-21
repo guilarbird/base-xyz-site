@@ -52,30 +52,22 @@ VITE_APP_LOGO=/logo.svg
 
 ---
 
-## 🌐 Passo 3: Conectar Domínio base-xyz.com
+## 🌐 Passo 3: Conectar Subdomínio garrafa.base-xyz.com
 
 ### 3.1 Adicionar Domínio no Vercel
 
 1. No projeto deployado, vá em **Settings → Domains**
 2. Clique em **"Add Domain"**
-3. Digite `base-xyz.com` e clique em **"Add"**
-4. Repita para `www.base-xyz.com`
+3. Digite `garrafa.base-xyz.com` e clique em **"Add"**
 
 ### 3.2 Configurar DNS
 
-O Vercel vai mostrar instruções específicas. Geralmente são:
+O Vercel vai mostrar instruções específicas. Geralmente é:
 
-**Para domínio apex (base-xyz.com):**
-```
-Type: A
-Name: @
-Value: 76.76.21.21
-```
-
-**Para subdomínio www:**
+**Para subdomínio garrafa:**
 ```
 Type: CNAME
-Name: www
+Name: garrafa
 Value: cname.vercel-dns.com
 ```
 
@@ -93,15 +85,25 @@ Value: cname.vercel-dns.com
 
 ---
 
+## 📋 Estrutura de Domínios Final
+
+Após a configuração, você terá:
+
+- **garrafa.base-xyz.com** → Landing page (Vercel)
+- **www.base-xyz.com** → Comunidade Circle.so (já configurado)
+- **base-xyz.com** → Pode redirecionar para www ou garrafa (sua escolha)
+
+---
+
 ## ✅ Passo 4: Validação Final
 
 Após o deploy e configuração do domínio, teste:
 
-1. **Homepage**: https://base-xyz.com
+1. **Homepage**: https://garrafa.base-xyz.com
    - Deve carregar o hero com a garrafa
    - Botão "Participar Agora" deve abrir o popup informativo
 
-2. **Cadastro**: https://base-xyz.com/cadastro
+2. **Cadastro**: https://garrafa.base-xyz.com/cadastro
    - Preencher formulário completo
    - Verificar se o membro aparece no Circle.so
 
@@ -124,7 +126,7 @@ Agora, sempre que você fizer mudanças:
 1. Edite os arquivos localmente ou via GitHub
 2. Faça commit e push para a branch `main`
 3. Vercel detecta automaticamente e faz deploy em ~2 minutos
-4. Mudanças vão ao ar em https://base-xyz.com
+4. Mudanças vão ao ar em https://garrafa.base-xyz.com
 
 ---
 
@@ -141,9 +143,10 @@ Se tiver problemas:
 
 ## 🎉 Pronto!
 
-Seu site está no ar em **https://base-xyz.com** 🚀
+Seu site estará no ar em **https://garrafa.base-xyz.com** 🚀
 
 Próximos passos recomendados:
 1. Testar cadastro real e verificar no Circle.so
 2. Adicionar Google Analytics
 3. Configurar email marketing para newsletter
+4. Considerar adicionar timer de contagem regressiva de 7 dias na página /desafio

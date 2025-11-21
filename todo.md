@@ -475,3 +475,11 @@
   - [ ] Testar cadastro → Circle.so
   - [ ] Testar newsletter
   - [ ] Verificar todas as rotas
+
+## Configuração de Subdomínio garrafa.base-xyz.com
+
+- [x] Atualizar DEPLOY-GUIDE.md com instruções para subdomínio garrafa.base-xyz.com
+- [x] Atualizar README.md com novo domínio
+- [x] Atualizar vercel.json se necessário (não foi necessário)
+- [ ] Fazer commit e push das alterações
+- [x] Criar instruções de configuração DNS para garrafa.base-xyz.com
