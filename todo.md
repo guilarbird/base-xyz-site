@@ -74,3 +74,9 @@
 - [x] Adicionar backdrop blur no container de texto (backdrop-blur-md)
 - [x] Criar caixa semi-transparente para destacar mensagem (bg-black/30 com borda)
 - [x] Manter animação do universo visível
+
+## Ajustes de UX e Copy
+
+- [x] Remover badge "Economia Digital • Creators • Stablecoins" do Hero
+- [x] Centralizar seção "O Desafio da Garrafa" (já estava centralizada)
+- [x] Melhorar copy: substituir "qualquer um" por "comunidade seletiva"

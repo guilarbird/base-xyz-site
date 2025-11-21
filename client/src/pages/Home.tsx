@@ -54,9 +54,6 @@ export default function Home() {
               {/* Caixa semi-transparente para destacar conteúdo */}
               <div className="bg-black/30 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl">
                 <div className="space-y-8">
-                <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary backdrop-blur-sm">
-                  Economia Digital • Creators • Stablecoins
-                </div>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
                   Domine a <span className="text-primary">Economia Digital</span>
                 </h1>
@@ -92,7 +89,7 @@ export default function Home() {
                   Seu Ritual de Entrada na Economia Digital
                 </p>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Não aceitamos qualquer um. Mostre sua <strong className="text-foreground">criatividade</strong>, <strong className="text-foreground">pensamento crítico</strong> e <strong className="text-foreground">domínio da economia digital</strong>.
+                  Esta é uma comunidade seletiva. Mostre sua <strong className="text-foreground">criatividade</strong>, <strong className="text-foreground">pensamento crítico</strong> e <strong className="text-foreground">domínio da economia digital</strong>.
                 </p>
               </div>
 
