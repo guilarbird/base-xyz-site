@@ -40,17 +40,17 @@ export default function Home() {
             <span className="font-bold text-lg tracking-tight">BASE XYZ</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#desafio" className="text-sm text-muted-foreground hover:text-primary transition-colors">Desafio</a>
-            <a href="#sobre" className="text-sm text-muted-foreground hover:text-primary transition-colors">Sobre</a>
-            <a href="#jornada" className="text-sm text-muted-foreground hover:text-primary transition-colors">Jornada</a>
-            <a href="#faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">FAQ</a>
+            <a href="/desafio" className="text-sm text-muted-foreground hover:text-primary transition-colors">Desafio</a>
+            <a href="/academia" className="text-sm text-muted-foreground hover:text-primary transition-colors">Academia</a>
+            <a href="/jornada" className="text-sm text-muted-foreground hover:text-primary transition-colors">Jornada</a>
+            <a href="/faq" className="text-sm text-muted-foreground hover:text-primary transition-colors">FAQ</a>
           </nav>
           <div className="flex items-center gap-3">
             <Button variant="ghost" size="sm" className="text-sm" asChild>
               <a href="https://www.base-xyz.com" target="_blank" rel="noopener noreferrer">Entrar</a>
             </Button>
             <Button size="sm" className="text-sm" asChild>
-              <a href="#desafio">Participar</a>
+              <a href="/cadastro">Participar</a>
             </Button>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function Home() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center" style={{ marginTop: '40px' }}>
                     <a 
-                      href="#desafio" 
+                      href="/cadastro" 
                       className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-lg font-semibold text-white transition-all hover:scale-105"
                       style={{
                         background: 'linear-gradient(90deg, #6F3BFF, #8C52FF)',
@@ -152,11 +152,11 @@ export default function Home() {
                         e.currentTarget.style.boxShadow = '0 0 16px rgba(140, 82, 255, 0.4)';
                       }}
                     >
-                      Aceitar o Desafio
+                      Participar Agora
                       <ArrowRight className="h-5 w-5" />
                     </a>
                     <Button size="lg" variant="ghost" className="backdrop-blur-sm border border-white/20 hover:border-primary/50" asChild>
-                      <a href="#sobre">Explorar a Comunidade</a>
+                      <a href="/jornada">Explorar Trilhas</a>
                     </Button>
                   </div>
                 </div>
@@ -672,7 +672,7 @@ export default function Home() {
               <ul className="space-y-3 text-sm">
                 <li>
                   <a 
-                    href="#desafio" 
+                    href="/desafio" 
                     className="transition-colors"
                     style={{ color: '#C7C7C7' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#8C52FF'}
@@ -683,18 +683,18 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="#sobre" 
+                    href="/academia" 
                     className="transition-colors"
                     style={{ color: '#C7C7C7' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#8C52FF'}
                     onMouseLeave={(e) => e.currentTarget.style.color = '#C7C7C7'}
                   >
-                    Sobre
+                    Academia EdTech
                   </a>
                 </li>
                 <li>
                   <a 
-                    href="#jornada" 
+                    href="/jornada" 
                     className="transition-colors"
                     style={{ color: '#C7C7C7' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#8C52FF'}
@@ -724,13 +724,24 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="#faq" 
+                    href="/faq" 
                     className="transition-colors"
                     style={{ color: '#C7C7C7' }}
                     onMouseEnter={(e) => e.currentTarget.style.color = '#8C52FF'}
                     onMouseLeave={(e) => e.currentTarget.style.color = '#C7C7C7'}
                   >
                     FAQ
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/cadastro" 
+                    className="transition-colors"
+                    style={{ color: '#C7C7C7' }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = '#8C52FF'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#C7C7C7'}
+                  >
+                    Participar
                   </a>
                 </li>
               </ul>
@@ -772,7 +783,18 @@ export default function Home() {
               color: '#9E9E9E'
             }}
           >
-            <p>© 2025 Base XYZ. Todos os direitos reservados.</p>
+            <p className="mb-2">© 2025 Base XYZ. Todos os direitos reservados.</p>
+            <p className="text-xs">
+              Made with{' '}
+              <a 
+                href="https://manus.im" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                Manus
+              </a>
+            </p>
           </div>
         </div>
       </footer>

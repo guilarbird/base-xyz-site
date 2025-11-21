@@ -217,3 +217,70 @@
 ### Transições Globais
 - [ ] Fade vertical + leve parallax entre seções
 - [ ] Suavizar todas as transições
+
+## Revisão Crítica Completa
+
+### Domínio e Deploy
+- [ ] Configurar base-xyz.com (sem www) para não retornar 404
+- [ ] Garantir redirect consistente entre base-xyz.com e www.base-xyz.com
+- [ ] Configurar rota / → Landing Base XYZ
+- [ ] Configurar rota /entrar ou /login → Circle login
+
+### Estrutura de Rotas
+- [x] Criar rota /login → Login da comunidade (Circle)
+- [x] Criar rota /cadastro → Página de cadastro Base XYZ
+- [x] Criar rota /desafio → Página do Desafio da Garrafa
+- [x] Criar rota /jornada → Explicação das trilhas Creator/Builder
+- [x] Criar rota /academia → Landing da Academia EdTech
+- [x] Criar rota /faq → Perguntas frequentes
+
+### Hyperlinks de Navegação
+- [x] Botão "Entrar" → Circle.so (externo)
+- [x] Botão "Participar" (hero) → /cadastro
+- [x] Link "Desafio da Garrafa" → /desafio
+- [x] Link "Jornada" → /jornada
+- [x] Link "Academia EdTech" → /academia
+- [x] Link "FAQ" → /faq
+- [x] Link "Entrar na Comunidade" (footer) → Circle.so
+
+### Página de Cadastro (/cadastro)
+- [x] Criar formulário com campo Nome
+- [x] Adicionar campo Email
+- [x] Adicionar seleção de Trilhas (Creator / Builder) - cards clicáveis
+- [x] Adicionar campos opcionais de Redes Sociais (X, TikTok, Kwai, Instagram)
+- [x] Adicionar pergunta aberta: "O que você quer construir ou aprender na economia digital?"
+- [x] Implementar validação de formulário
+- [x] Configurar ação após submit (redirect para /onboarding)
+
+### Agente de IA de Onboarding (Sentinela Base XYZ)
+- [x] Criar interface de chat para agente
+- [x] Implementar mensagem de boas-vindas personalizada
+- [x] Explicar o que é a Base XYZ
+- [x] Reforçar que não trazemos investidores
+- [x] Explicar trilha Creator (economia criativa, conteúdo, UGC, social)
+- [x] Explicar trilha Builder (produtos, web3, automações, infra digital)
+- [x] Adicionar botão "Começar Desafio da Garrafa" → /desafio
+- [x] Criar tela final com botão "Entrar na Comunidade" → Circle.so
+- [x] Adicionar botão "Receber instruções por WhatsApp" → wa.me
+
+### Reordenação de Seções (Landing /)
+- [ ] 1. Hero (com título "Comunidade de Elite")
+- [ ] 2. Academia EdTech
+- [ ] 3. Jornada das Trilhas
+- [ ] 4. Desafio da Garrafa
+- [ ] 5. FAQ
+- [ ] 6. Formulário/CTA final
+- [ ] 7. Rodapé
+
+### Ajustes Visuais Finais
+- [x] Intensificar vermelho da energia da garrafa (brightness 1.1, saturate 1.2)
+- [x] Corrigir transição brusca da garrafa (fade + glow suave)
+- [x] Aplicar fade vertical leve entre seções
+- [x] Melhorar rodapé (4 colunas + animação logo)
+- [x] Adicionar selo "Made with Manus" no footer
+- [x] Garantir favicon oficial em todas as rotas
+
+### GitHub e Versionamento
+- [ ] Criar repositório GitHub (base-xyz-site)
+- [ ] Conectar com Vercel para deploy automático
+- [ ] Configurar edição via GitHub
