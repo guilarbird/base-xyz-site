@@ -180,3 +180,40 @@
 - [x] Botões touch-friendly
 - [x] Cards em colunas
 - [x] Títulos centralizados
+
+## Refinamentos Finais (GPT)
+
+### Hero e Efeitos Visuais
+- [x] Melhorar vermelho do hero (mais brilho, nuances, energia cinematográfica)
+- [x] Adicionar efeito de energia mais nítido na garrafa (luz definida + halo)
+- [x] Aplicar recorte/blur suave no fundo para foco no objeto
+- [x] Garantir alinhamento em todas as resoluções (desktop/mobile/tablet)
+- [x] Suavizar transições onde garrafa some (fade + energy glow)
+
+### Correções de Copy
+- [x] Trocar "Conectando creators, builders e investidores..." por "Conectando creators e builders a projetos globais — e organizando experiências exclusivas para a comunidade."
+- [x] Corrigir "dos dois trilhas" para "das duas trilhas"
+- [x] Adicionar linha após "Comunidade de Elite": "Um hub para quem constrói o futuro da economia digital no Brasil."
+- [x] Melhorar Academia EdTech: "Cursos, cases e análises sobre stablecoins, DeFi, pagamentos cross-border e inovação digital."
+
+### Reordenação de Seções
+- [ ] Reorganizar ordem: Hero → Academia EdTech → Jornada → Desafio → FAQ → CTA Final → Footer
+
+### Footer Premium
+- [x] Adicionar animação sutil do logo (glow pulsante + micro movimento 3%)
+- [x] Efeito loop suave sem distração (3s ease-in-out)
+- [x] Navegação simplificada
+
+### CTAs e Interações
+- [x] Garantir glow suave em todos os CTAs
+- [x] Hover com escala 1.05x
+- [x] Consistência entre seções
+
+### FAQ
+- [x] Revisar espaçamento e tipografia
+- [x] Micro-animação suave no acordeão
+- [x] Aplicar correções de copy
+
+### Transições Globais
+- [ ] Fade vertical + leve parallax entre seções
+- [ ] Suavizar todas as transições

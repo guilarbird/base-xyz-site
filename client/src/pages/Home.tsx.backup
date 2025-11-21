@@ -651,15 +651,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <img 
-                  src={APP_LOGO} 
-                  alt={APP_TITLE} 
-                  className="h-6 w-6" 
-                  style={{
-                    animation: 'logoGlow 3s ease-in-out infinite',
-                    filter: 'drop-shadow(0 0 4px rgba(140, 82, 255, 0.3))'
-                  }}
-                />
+                <img src={APP_LOGO} alt={APP_TITLE} className="h-6 w-6" />
                 <span className="font-bold" style={{ color: '#E6E6E6' }}>{APP_TITLE}</span>
               </div>
               <p className="text-sm" style={{ color: '#C7C7C7' }}>
